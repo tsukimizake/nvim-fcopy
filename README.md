@@ -1,45 +1,12 @@
-# A Neovim Plugin Template
+# nvim-fcopy
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ellisonleao/nvim-plugin-template/default.yml?branch=main&style=for-the-badge)
 ![Lua](https://img.shields.io/badge/Made%20with%20Lua-blueviolet.svg?style=for-the-badge&logo=lua)
 
+This is a very simple port of [fcopy.el](https://github.com/ataka/fcopy)
 
-A template repository for Neovim plugins.
+`Fcopystart` brings you into Funny Copy mode. The place where you get in fcopy-mode is the paste point; the text you choose to copy will be inserted with `Fcopyend`.
 
-## Using it
+Mainly written by chatgpt4. Here is the log. (Japanese) https://gist.github.com/tsukimizake/23d6fa62161642c0d430e45adc2202b2#file-gistfile1-txt
 
-Via `gh`:
-
-```
-$ gh repo create my-plugin -p ellisonleao/nvim-plugin-template
-```
-
-Via github web page:
-
-Click on `Use this template`
-
-![](https://docs.github.com/assets/cb-36544/images/help/repository/use-this-template-button.png)
-
-## Features and structure
-
-- 100% Lua
-- Github actions to run tests and check for formatting errors (Stylua)
-- Tests created with [busted](https://olivinelabs.com/busted/) + [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
-
-### Plugin structure
-
-```
-.
-├── lua
-│   ├── plugin_name
-│   │   └── module.lua
-│   └── plugin_name.lua
-├── Makefile
-├── plugin
-│   └── plugin_name.lua
-├── README.md
-├── tests
-│   ├── minimal_init.lua
-│   └── plugin_name
-│       └── plugin_name_spec.lua
-```
+I used https://github.com/ellisonleao/nvim-plugin-template to turn this code into a plugin.
