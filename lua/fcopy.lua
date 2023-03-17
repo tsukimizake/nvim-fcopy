@@ -2,6 +2,7 @@ local fcopy = {}
 
 local start_position = nil
 
+
 function fcopy.start()
   start_position = vim.api.nvim_win_get_cursor(0)
 end
@@ -55,7 +56,7 @@ function fcopy.end_()
     if selected_text then
       -- Paste the copied text at the saved start_position
       vim.api.nvim_win_set_cursor(0, start_position)
-      vim.fn.setreg('"', selected_text, 'V')
+      vim.fn.setreg('"', selected_text, 'v')
       vim.cmd('normal! p')
       start_position = nil
     else
